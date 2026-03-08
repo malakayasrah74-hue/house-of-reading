@@ -3,6 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W1T6GH1HM4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-W1T6GH1HM4');
+    </script>
+    
     <title>بيت القراءة - مكتبة رقمية شاملة</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
@@ -105,9 +115,8 @@
         .quick-link-card h3 { font-size: 0.85rem; margin-bottom: 4px; color: var(--accent-gold); }
         .quick-link-card p { color: var(--fg-secondary); font-size: 10px; }
 
-        .credits-box { background: linear-gradient(135deg, rgba(201, 168, 98, 0.08), transparent); border: 1px solid rgba(201, 168, 98, 0.2); border-radius: 8px; padding: 15px; text-align: center; max-width: 350px; margin: 20px auto 0; }
-        .credits-box p { color: var(--fg-secondary); font-size: 11px; margin-bottom: 3px; }
-        .credits-box .year { color: var(--accent-gold); font-weight: 600; margin-top: 6px; }
+        .credits-box { background: linear-gradient(135deg, rgba(201, 168, 98, 0.08), transparent); border: 1px solid rgba(201, 168, 98, 0.2); border-radius: 8px; padding: 15px; text-align: center; max-width: 400px; margin: 20px auto 0; }
+        .credits-box p { color: var(--fg-secondary); font-size: 11px; margin-bottom: 4px; }
 
         .books-section { padding: 30px 12px 50px; }
         .books-header { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; max-width: 900px; margin-left: auto; margin-right: auto; }
@@ -196,7 +205,6 @@
         .page { display: none; }
         .page.active { display: block; }
 
-        /* للأجهزة الكبيرة - لابتوب */
         @media (min-width: 769px) {
             .intro-book { width: 180px; height: 240px; }
             .intro-book-pages h1 { font-size: 1.5rem; }
@@ -229,7 +237,7 @@
             .sources-box { padding: 25px; max-width: 700px; }
             .quick-links-grid { grid-template-columns: repeat(4, 1fr); gap: 15px; max-width: 900px; }
             .quick-link-card { padding: 20px; }
-            .credits-box { padding: 18px; max-width: 450px; }
+            .credits-box { padding: 18px; max-width: 480px; }
             .books-section { padding: 40px 20px 60px; }
             .books-header { gap: 12px; margin-bottom: 25px; max-width: 1100px; }
             .books-grid { grid-template-columns: repeat(auto-fill, minmax(155px, 1fr)); gap: 12px; max-width: 1100px; }
@@ -290,7 +298,6 @@
             .toast { bottom: 18px; padding: 10px 20px; font-size: 12px; }
         }
 
-        /* للأجهزة الصغيرة جداً */
         @media (max-width: 360px) {
             .categories-grid { grid-template-columns: repeat(2, 1fr); }
             .books-grid { grid-template-columns: repeat(2, 1fr); }
@@ -362,10 +369,11 @@
                 </div>
 
                 <div class="credits-box">
-                    <p>إعداد الطالبة : ملاك عامر عياصرة</p>
-                    <p>إشراف المعلمة: خديجة العفيف</p>
+                    <p>إعداد: ملاك عامر عياصرة</p>
+                    <p style="color: #e8b64a; font-weight: 600;">مدرسة ساكب الثانوية للبنات</p>
                     <p>مديرة المدرسة: نسرين عساسفة</p>
-                    <p class="year">مدرسة ساكب الثانوية شاملة للبنات</p>
+                    <p>بإشراف معلمات اللغة العربية: خديجة العفيف و سحر سوالمة</p>
+                    <p>بإشراف معلمة الحاسوب: سنابل العتوم</p>
                 </div>
             </section>
         </div>
